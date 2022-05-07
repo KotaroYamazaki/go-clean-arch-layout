@@ -1,0 +1,11 @@
+services:
+  db:
+    image: mysql:latest
+    platform: linux/amd64
+    container_name: mysql_container
+    environment:
+      MYSQL_DATABASE: goca
+      MYSQL_ROOT_PASSWORD: root
+      TZ: "Asia/Tokyo"
+    ports:
+      - "3306:3306"
