@@ -1,4 +1,4 @@
-output: "pkg/orm"
+output: "../pkg/orm"
 wipe: "true"
 no-tests: "true"
 
