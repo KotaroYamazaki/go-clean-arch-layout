@@ -22,5 +22,5 @@ func NewUserUsecase(repo repository.UserRepository) UserUsecase {
 }
 
 func (uc *userUsecase) Get(ctx context.Context, id int) (*entities.User, error) {
-	return nil, nil
+	return uc.repo.Get(ctx, id)
 }
