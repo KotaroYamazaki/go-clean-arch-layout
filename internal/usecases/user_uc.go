@@ -4,7 +4,7 @@ import (
 	"context"
 
 	entities "github.com/KotaroYamazaki/go-clean-arch-layout/internal/entities"
-	"github.com/KotaroYamazaki/go-clean-arch-layout/internal/infra/repository"
+	"github.com/KotaroYamazaki/go-clean-arch-layout/internal/entities/repository"
 )
 
 type UserUsecase interface {

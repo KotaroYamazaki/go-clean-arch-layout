@@ -3,18 +3,16 @@ package repository
 import (
 	"context"
 
+	"github.com/KotaroYamazaki/go-clean-arch-layout/internal/entities/repository"
+
 	entities "github.com/KotaroYamazaki/go-clean-arch-layout/internal/entities"
 	"github.com/KotaroYamazaki/go-clean-arch-layout/internal/infra/db"
 	orm "github.com/KotaroYamazaki/go-clean-arch-layout/pkg/orm"
 )
 
-type UserRepository interface {
-	Get(ctx context.Context, id int) (*entities.User, error)
-}
-
 type userRepository struct{}
 
-func NewUserRepository() UserRepository {
+func NewUserRepository() repository.UserRepository {
 	return &userRepository{}
 }
 
